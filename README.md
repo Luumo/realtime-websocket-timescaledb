@@ -14,8 +14,8 @@ This is a simple example of data streaming using WebSocket communication. It con
    ```
    pip install -r requirements.txt
    ```
-3. Create a PostgreSQL database and note down the connection details (host, port, database name, username, password).
-4. Create a new file named `.env` in the project's root directory and add the following contents, replacing the placeholder values with your PostgreSQL connection details:
+3. Create a PostgreSQL (TimescaleDB) database using the `docker-compose.yml` in the .db/resources directory.
+4. Create/update the `.env` in the project's root directory and add the following contents, replacing the placeholder values with your PostgreSQL connection details:
    ```
    DB_HOST=<PostgreSQL host>
    DB_PORT=<PostgreSQL port>
